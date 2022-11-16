@@ -5,12 +5,17 @@ import { fetchProductsList } from './helpers/fetchFunctions';
 
 document.querySelector('.cep-button').addEventListener('click', searchCep);
 
-window.onload = async () => {
-  const products = document.querySelector('.products');
+const products = document.querySelector('.products');
+ window.onload = async () => {
   products.innerHTML = '<p class = "loading">Carregando...</p>';
-  const productsList = await fetchProductsList('computador');
-  products.innerHTML = '';
-  productsList.forEach((product) => {
-    products.appendChild(createProductElement(product));
+  try {
+   const productsList = await fetchProductsList('computador');
+   products.innerHTML = '';
+   productsList.forEach((product) => {
+   products.appendChild(createProductElement(product));
   });
+} catch(error){
+   products.innerHTML = '';
+   products.innerHTML = '<p class = "error">Algum erro ocorreu, recarregue a página e tente novamente</p>"';
+}
 };
