@@ -3,5 +3,9 @@ export const fetchProduct = () => {
 };
 
 export const fetchProductsList = () => {
-  // seu código aqui
+  if(fetchProductsList('')){
+    throw new Error ('Termo de busca não informado');
+  };
+  return fetch(`https://api.mercadolibre.com/sites/MLB/search?q=$QUERY`)
+    .then((response) => response.json());
 };
