@@ -15,10 +15,10 @@ describe('Teste a função fetchProduct', () => {
     await fetchProduct('MLB1405519561');
     expect(fetch).toHaveBeenCalledWith('https://api.mercadolibre.com/items/MLB1405519561');
   });
-  it('Teste se o retorno é igual ao objeto product', () => {
-   expect(fetchProduct('MLB1405519561')).toEqual(product);
+  it('Teste se o retorno é igual ao objeto product', async () => {
+    await expect(fetchProduct('MLB1405519561')).resolves.toMatchObject(product);
   });
-  it('Teste se retorna erro caso não seja passado nenhum argumento', () =>{
-   expect(fetchProduct('')).toThrowError
+  it('Teste se retorna erro caso não seja passado nenhum argumento', async () =>{
+   await expect(fetchProduct('')).rejects.toThrowError();
   });
 });
