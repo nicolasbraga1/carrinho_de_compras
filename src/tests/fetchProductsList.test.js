@@ -10,7 +10,7 @@ describe('Teste a função fetchProductsList', () => {
 
   it('fetch é chamado ao executar fetchProductsList', async () => {
     await fetchProductsList('computador');
-    expect(fetch).toHaveBeenCalled;
+    expect(fetch).toHaveBeenCalled();
   });
 
   it('fetch é chamado com o endpoint correto ao executar fetchProductsList', async () => {
