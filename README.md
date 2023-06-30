@@ -1,4 +1,4 @@
-# Carrinho de Comprar
+# Carrinho de Compras
 
 Esse projeto utiliza uma API para pegar dados de produtos de informática e poder gerar um carrinho de compras dinâmico.
 
