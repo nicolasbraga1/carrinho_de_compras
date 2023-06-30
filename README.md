@@ -1,10 +1,31 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Carrinho de Comprar
+
+Esse projeto utiliza uma API para pegar dados de produtos de informática e poder gerar um carrinho de compras dinâmico.
+
+## 🚀 Começando
+
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+
+### 📋 Pré-requisitos
+
+De que coisas você precisa para instalar o software e como instalá-lo?
+
+```
+Nesse não precisa de nada, pode instalar
+```
+
+### 🔧 Instalação
+
+- ℹ️ Instale as dependências com:
+
+```
+npm install
+```
+
+## 🛠️ Construído com
+
+* JavaScript
+
+## ✒️ Autores
+
+* **Nícolas Braga** - *Trabalho Inicial* - [Nícolas Braga](https://github.com/nicolasbraga1)
